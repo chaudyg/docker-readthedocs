@@ -14,6 +14,7 @@ REDIS = {
     'port': 6379,
     'db': 0,
 }
+ALLOW_PRIVATE_REPOS = "ALLOW_PRIVATE_REPOS" in os.environ
 
 BROKER_URL = 'redis://0.0.0.0:6379/0'
 CELERY_RESULT_BACKEND = 'redis://0.0.0.0:6379/0'
